@@ -1,0 +1,32 @@
+{
+    "name": "locust",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "description": "Locust behaviour",
+    "run_list": [
+        "recipe[locust-swarm]"
+    ],
+    "default_attributes": {
+        "locustio": {
+            "base_url": "docs.locust.io",
+            "uri_list": [
+                {
+                    "uri": "/en/latest/",
+                    "weight": 10,
+                    "identifier": "latest"
+                },
+                {
+                    "uri": "/en/latest/what-is-locust.html",
+                    "weight": 5,
+                    "identifier": "about"
+                },
+                {
+                    "uri": "/en/latest/installation.html",
+                    "weight": 2,
+                    "identifier": "install"
+                }
+            ]
+
+        }
+    }
+}
