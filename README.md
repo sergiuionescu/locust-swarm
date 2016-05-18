@@ -67,7 +67,7 @@ roles/locust.json
 * The base_url and uri are self explanatory
 * The weight controls the request distribution
 * The identifier must be unique
-* Another kitchen converge needs to be run in order to update the locust test file
+* "kitchen converge" needs to be run each time the role is modified in order to update the test file
 
 Credits
 -------
