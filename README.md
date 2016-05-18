@@ -64,9 +64,10 @@ roles/locust.json
 ```
 
 * You can setup your own test by altering the values in the example above
-** The base_url and uri are self explanatory
-** The weight controls the request distribution
-** The identifier must be unique
+* The base_url and uri are self explanatory
+* The weight controls the request distribution
+* The identifier must be unique
+* Another kitchen converge needs to be run in order to update the locust test file
 
 Credits
 -------
